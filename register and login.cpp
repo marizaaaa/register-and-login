@@ -31,7 +31,7 @@ void RegisterNewUser() {
 	std::cout << "Type your password: ";
 	std::cin >> password;
 
-	std::ofstream write("C:\\Users\\Tirka\\source\\repos\\register and login\\" + username + ".txt");
+	std::ofstream write("C:\\Users\\User\\desktop\\" + username + ".txt");
 	write << username << "\n";
 	write << password << "\n";
 	std::cout << "You are now registred!";
@@ -43,7 +43,7 @@ void LoginUser() {
 	std::cout << "Type your password: ";
 	std::cin >> password;
 
-	std::ifstream read("C:\\Users\\Tirka\\source\\repos\\register and login\\" + username + ".txt");
+	std::ifstream read("C:\\Users\\User\\desktop\\" + username + ".txt");
 	std::getline(read, un);
 	std::getline(read, pw);
 
